@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Raw FDA dataset
+dataset by fda/
+
+# Processed data
+dataset/processed/
+dataset/analysis/
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Power BI temporary files
+*.pbit
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
