@@ -1,14 +1,18 @@
 import pandas as pd
 import os
 
+# ============================================================
+# PROJECT PATH
+# ============================================================
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ============================================================
 # PATHS
 # ============================================================
 
-INPUT_PATH = r"E:\glp1\dataset\processed"
-OUTPUT_PATH = r"E:\glp1\dataset\analysis"
-
+INPUT_PATH = os.path.join(PROJECT_ROOT, "dataset", "processed")
+OUTPUT_PATH = os.path.join(PROJECT_ROOT, "dataset", "analysis")
 
 # ============================================================
 # LOAD CLEAN TABLES

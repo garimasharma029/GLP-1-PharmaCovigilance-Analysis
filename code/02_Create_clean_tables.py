@@ -1,9 +1,21 @@
 import pandas as pd
 import os
 
+# ============================================
+# PROJECT PATH
+# ============================================
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# ============================================
 # Base folder containing FDA ASCII files
+# ============================================
 
 base_path = r"E:\glp1\dataset by fda\ASCII"
+
+output_path = os.path.join(PROJECT_ROOT, "dataset", "processed")
+
+os.makedirs(output_path, exist_ok=True)
 
 # Function to load FDA tables
 
@@ -420,8 +432,6 @@ clean_patient["age_group_clean"] = (
 # ============================================================
 # SAVE CLEAN TABLES
 # ============================================================
-
-output_path = r"E:\glp1\dataset\processed"
 
 os.makedirs(output_path, exist_ok=True)
 

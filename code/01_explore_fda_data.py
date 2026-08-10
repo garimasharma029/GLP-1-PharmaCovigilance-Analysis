@@ -1,11 +1,17 @@
 import pandas as pd
+import os
+
+# ============================================
+# PROJECT PATH
+# ============================================
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ============================================
 # Folder containing the FDA ASCII files
 # ============================================
 
 base_path = r"E:\glp1\dataset by fda\ASCII"
-
 
 # ============================================
 # 1. DEMO - Patient and report information
